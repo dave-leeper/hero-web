@@ -11,7 +11,10 @@
 
 .PowerTextName{
     font-size: 13px;
+    width: 195px;
     height: 19px;
+    text-align: left;
+    overflow: hidden;
     margin-left: 4px;
     &:hover{
         cursor:pointer

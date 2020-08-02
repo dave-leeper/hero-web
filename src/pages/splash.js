@@ -10,9 +10,9 @@ let pingServer = async (archetypeId, setArchetypeName) => {
     let url = baseURL + 'ping/server'
     let response = await fetch(url)
 }
-pingServer()
 
 function Splash(props){
+  pingServer()
   if (-1 === timeoutId) {
     const {setLocation, setContext} = useLocation();
     timeoutId = setTimeout(()=>{ 
@@ -33,8 +33,6 @@ let loadWasm = async (setContext) => {
     console.log("Loading WASM");
     const wasm = await import('hero_core-wasm');
     setContext({wasm});
-
-    if (wasm.core_command_web) console.log(wasm.core_command_web("Command"));
   } catch(err) {
     console.error(`Unexpected error in loadWasm. [Message: ${err.message}]`);
   }

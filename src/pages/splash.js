@@ -5,6 +5,12 @@ import './splash.scss';
 
 let timeoutId = -1
 
+const baseURL = 'https://gentle-dusk-67062.herokuapp.com/'
+let pingServer = async (archetypeId, setArchetypeName) => {
+    let url = baseURL + 'ping/server'
+    let response = await fetch(url)
+}
+
 function Splash(props){
   if (-1 === timeoutId) {
     const {setLocation, setContext} = useLocation();

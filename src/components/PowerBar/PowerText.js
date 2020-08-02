@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PowerText.scss';
 
 
-const baseURL = 'http://gentle-dusk-67062.herokuapp.com/'
+const baseURL = 'https://gentle-dusk-67062.herokuapp.com/'
 let getPower = async (powerId, setPowerName) => {
     if ('None' === powerId || !powerId)
         return

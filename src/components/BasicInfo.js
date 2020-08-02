@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './BasicInfo.scss';
 
-const baseURL = 'http://gentle-dusk-67062.herokuapp.com/'
+const baseURL = 'https://gentle-dusk-67062.herokuapp.com/'
 let getArchetype = async (archetypeId, setArchetypeName) => {
     let url = baseURL + 'archetype/' + archetypeId
     let response = await fetch(url)

@@ -10,6 +10,7 @@ let pingServer = async (archetypeId, setArchetypeName) => {
     let url = baseURL + 'ping/server'
     let response = await fetch(url)
 }
+pingServer()
 
 function Splash(props){
   if (-1 === timeoutId) {

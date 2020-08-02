@@ -4,15 +4,23 @@ import {useLocation} from 'react-awesome-router';
 import './splash.scss';
 
 let timeoutId = -1
-
-const baseURL = 'https://gentle-dusk-67062.herokuapp.com/'
-let pingServer = async (archetypeId, setArchetypeName) => {
-    let url = baseURL + 'ping/server'
-    let response = await fetch(url)
-}
+let primaryAPIServerUp = false
+let secondaryAPIServerUp = -1
+const baseURLPrimaryAPIServer = 'https://gentle-dusk-67062.herokuapp.com/'
+const baseURLSecondaryAPIServer = 'https://gentle-dusk-67062.herokuapp.com/'
 
 function Splash(props){
-  pingServer()
+  let pingServer = async (baseURL) => {
+    let response = await fetch(baseURL + 'ping/server')
+    if (response.ok) return true
+    return false
+  }
+  let pingServers = async () => {
+    primaryAPIServerUp = await pingServer(baseURLPrimaryAPIServer)
+    secondaryAPIServerUp = await pingServer(baseURLSecondaryAPIServer)
+  }
+  pingServers()
+
   if (-1 === timeoutId) {
     const {setLocation, setContext} = useLocation();
     timeoutId = setTimeout(()=>{ 

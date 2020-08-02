@@ -20,7 +20,7 @@
     "react-scripts": "2.1.8",
     "tailwindcss": "^1.4.6",
     "react-app-rewired": "^2.1.5",
-    "babel-plugin-import": "^1.12.2",
+    "babel-plugin-import": "^1.12.2"
   },
   "scripts": {
     "start": "npm-run-all build:tailwind --parallel watch:tailwind start:react",

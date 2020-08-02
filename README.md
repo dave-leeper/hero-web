@@ -1,118 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deploy To Heroku
+================
+To deploy
+---------
+* Commit and push to git as normal. Heroku will automatically update.
+  
+* WASM Resources
+--------------
+* [Rust 🦀 and WebAssembly 🕸 (tutorial)](https://rustwasm.github.io/docs/book/game-of-life/introduction.html)
+* [Up and Running with React + Rust + Wasm (blogpost)](https://prestonrichey.com/blog/react-rust-wasm/)
+* [hero_core-wasm](https://www.npmjs.com/settings/magicjava/packages)
 
+React Resources
+---------------
+* [Using WebAssembly with React](https://www.telerik.com/blogs/using-webassembly-with-react)
+* [react-awesome-router](https://github.com/hryuk/react-awesome-router)
+* [React Draggable](http://mzabriskie.github.io/react-draggable/example/)
+* [react-query](https://www.npmjs.com/package/react-query)
+* [zustand](https://github.com/react-spring/zustand)
+* [Deploy Your React App To Heroku](https://dev.to/smithmanny/deploy-your-react-app-to-heroku-2b6f)
+* [Semantic UI React](https://react.semantic-ui.com)
+* *[@zeit-ui/react](https://react.zeit-ui.co/en-us/guide/introduction)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
-
-
-
-# Setting up Project to use WebAssembly (.wasm) without ejecting
-Courtesy of https://github.com/ballercat/wasm-loader/issues/3
-
-### Step 1
-Install `react-app-rewired` and `wasm-loader`
-
-Yarn:
-`yarn add react-app-rewired wasm-loader --dev`
-
-NPM:
-`npm install react-app-rewired wasm-loader -D`
-
-### Step 2
-Add a file `config-overrides.js` to root directory
-
-### Step 3
-Change package.json from
-```
-"scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-}
-```
-
-to
-
-```
-"scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-}
-```
-
-
-### Step 4
-
-Copy .wasm package into a folder
-
-
-### Step 5
-
-The external WASM needs to be loaded asynchnrously via the import.  See `App.js` loadWasm
+Tailwind Resources
+------------------
+* [Setting up Tailwind and PostCSS](https://tailwindcss.com/course/setting-up-tailwind-and-postcss)
+* [Using Tailwind CSS with Create React App](https://daveceddia.com/tailwind-create-react-app/)
+  

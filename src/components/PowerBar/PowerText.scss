@@ -1,0 +1,27 @@
+@import '../../css/common.scss';
+
+.PowerText{
+    @include row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 300px;
+    height: 35px;
+    margin-left: 3px;
+}
+
+.PowerTextName{
+    font-size: 13px;
+    height: 19px;
+    margin-left: 4px;
+    &:hover{
+        cursor:pointer
+    }
+}
+
+.PowerTextLevel{
+    font-size: 11px;
+    height: 16px;
+    &:hover{
+        cursor:pointer
+    }
+}

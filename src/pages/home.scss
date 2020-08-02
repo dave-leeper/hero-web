@@ -1,0 +1,50 @@
+@import '../css//common.scss';
+
+.Home {
+    @include page;
+}
+
+.ArchetypeButtonPanel {
+  @include center;
+  width: calc((#{$large_button_width}) * 5px);
+  height: calc((#{$large_button_height}) * 3px);
+}
+
+.ArchetypeButtonPanelTitle {
+  @include center-horiz;
+  position: relative;
+  color: $text_color;
+  font-size: $title_text_size;
+  text-align: center;
+  &:hover{
+    cursor:default
+  }
+}
+
+.ArchetypeButtonRow {
+  @include row;
+  margin: $button_row_margin;
+}
+
+.ArchetypeButtonColumn {
+  @include column;
+}
+
+.ArchetypeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $large_button_width;
+  height: $large_button_height; 
+  &:hover{
+    cursor:pointer
+}
+}
+
+.ArchetypeLink {
+  padding-top: 5px;
+  color: $button_text_color;
+  &:hover{
+    cursor:pointer
+}
+}

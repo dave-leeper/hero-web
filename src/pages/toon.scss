@@ -1,0 +1,14 @@
+@import '../css//common.scss';
+
+.Toon {
+    @include column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ToonGeneral {
+    @include row;
+    align-items: space-between;
+    width: $power_bar_width;
+}

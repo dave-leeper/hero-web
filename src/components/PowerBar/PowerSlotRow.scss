@@ -1,0 +1,13 @@
+@import '../../css/common.scss';
+
+.PowerSlotRow{
+    display: grid;
+    grid-template-columns: repeat(6, 30px [col-start]);
+    column-gap: 17px;
+    bottom: 0;
+    width: 234px;
+    height: 40px;
+    margin-left: 3px;
+    position: relative;
+    bottom: -32px;
+}

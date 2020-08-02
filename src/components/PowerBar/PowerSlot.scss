@@ -1,0 +1,47 @@
+@import '../../css/common.scss';
+
+$slot_border: #707070;
+$slot_unslotted_fill: #ffffff;
+$slot_primary_fill: #e0e0ff;
+$slot_secondary_fill: #ffe0e0;
+$slot_pool_fill: #ffffe0;
+$slot_epic_fill: #ffd87f;
+$slot_inherent_fill: #e0ffe0;
+
+.PowerSlot {
+    width: 35px;
+    height: 35px;
+    &:hover{
+        cursor:pointer
+    }
+}
+
+.SlotUnslotted {
+    fill: $slot_unslotted_fill;
+    stroke: $slot_border;
+}
+
+.SlotPrimary {
+    fill: $slot_primary_fill;
+    stroke: $slot_border;
+}
+
+.SlotSecondary {
+    fill: $slot_secondary_fill;
+    stroke: $slot_border;
+}
+
+.SlotPool {
+    fill: $slot_pool_fill;
+    stroke: $slot_border;
+}
+
+.SlotEpic {
+    fill: $slot_epic_fill;
+    stroke: $slot_border;
+}
+
+.SlotInherent {
+    fill: $slot_inherent_fill;
+    stroke: $slot_border;
+}

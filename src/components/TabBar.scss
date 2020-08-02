@@ -1,0 +1,25 @@
+@import '../css/common.scss';
+
+.TabBar{
+    @include row;
+    flex-wrap: nowrap;
+}
+
+.TabBarTab {
+    font-size: 10pt;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        cursor:pointer
+    }
+  }
+
+.TabBarSelected {
+    font-weight: 800;
+}
+
+.TabBarNormal {
+    font-weight: 300;
+}

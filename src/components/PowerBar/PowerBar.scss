@@ -1,0 +1,57 @@
+@import '../../css/common.scss';
+
+$power_bar_border_no_power: #BBBBBB;
+$power_bar_border_primary: #0000FF;
+$power_bar_border_secondary: #FF0000;
+$power_bar_border_pool: #FFFF00;
+$power_bar_border_epic: #FF7F00;
+$power_bar_border_inherent: #00FF00;
+
+.PowerBar {
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.PowerBarMain {
+    @include row;
+    align-items: flex-start;
+    width: 280px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border-width: 1px;
+    border-color: $power_bar_border_no_power;
+    border-radius: 18px;
+    position: absolute;
+    &:hover{
+        cursor:pointer
+    }
+}
+
+.PowerBarMainNoPower {
+    border-color: $power_bar_border_no_power;
+}
+
+.PowerBarMainPrimary {
+    border-color: $power_bar_border_primary;
+}
+
+.PowerBarMainSecondary {
+    border-color: $power_bar_border_secondary;
+}
+
+.PowerBarMainPool {
+    border-color: $power_bar_border_pool;
+}
+
+.PowerBarMainEpic {
+    border-color: $power_bar_border_epic;
+}
+
+.PowerBarMainInherent {
+    border-color: $power_bar_border_inherent;
+}
+
+.PowerBarButtons{
+    width: 40px;
+    height: 40px;
+}

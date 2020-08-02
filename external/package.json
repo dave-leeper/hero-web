@@ -1,0 +1,15 @@
+{
+  "name": "hero_core",
+  "collaborators": [
+    "dave-leeper <magicjtv@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "hero_core_bg.wasm",
+    "hero_core.js",
+    "hero_core.d.ts"
+  ],
+  "module": "hero_core.js",
+  "types": "hero_core.d.ts",
+  "sideEffects": false
+}

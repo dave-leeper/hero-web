@@ -1,0 +1,6 @@
+export const SlotState = {
+    NO_POWER: 'NO_POWER',
+    UNSLOTTED: 'UNSLOTTED',
+    SLOTTED: 'SLOTTED',
+    ENHANCEMENT: 'ENHANCEMENT'
+};

@@ -1,0 +1,11 @@
+@import '../css//common.scss';
+
+.PowerGrid {
+    @include row;
+}
+
+.PowerGridColumn {
+    @include column;
+    min-width: 300px;
+    width: 300px;
+}

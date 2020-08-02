@@ -1,0 +1,15 @@
+@import '../../css/common.scss';
+
+.PowerButtons{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 30px;
+    height: 25px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.PowerButtonIncludeHidden{
+    display: none;
+}

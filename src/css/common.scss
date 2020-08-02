@@ -1,0 +1,114 @@
+$button_row_margin: 10px;
+$button_text_color: #555555;
+$button_text_size: small;
+$large_button_height: 100px;
+$large_button_width: 100px;
+$medium_text_size: 32em;
+$page_background_color: rgba(255,255,255,1.0);
+$power_bar_width: 280px;
+$small_text_size: 2em;
+$text_color: #555555;
+$text_color_disabled: #777777;
+$title_text_size: large;
+
+.TextColor {
+  color: $text_color;
+}
+
+.TextColorDisabled {
+  color: $text_color_disabled;
+}
+
+.SmallButton{
+  width: 25px;
+  height: 25px;
+  &:hover{
+      cursor:pointer
+  }
+}
+
+@mixin page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $page_background_color;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-horiz {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin center-vert {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@function convert($value, $currentUnit, $convertUnit){
+    @if $currentUnit == px{
+  
+      @if $convertUnit == ems{
+        @return $value / 16 + 0em;
+      }
+      @else if $convertUnit == percent{
+        @return percentage($value / 16);
+      }
+  
+    }@else if $currentUnit == ems{
+  
+      @if $convertUnit == px{
+        @return $value * 16 + 0px;
+      }
+      @else if $convertUnit == percent{
+        @return percentage($value);
+      }
+  
+    }@else if $currentUnit == percent{
+  
+      @if $convertUnit == px{
+        @return $value * 16 / 100 + 0px;
+      }
+      @else if $convertUnit == ems{
+        @return $value / 100 + 0em;
+      }
+  
+    }@else if $currentUnit == pts{
+  
+      @if $convertUnit == px{
+        @return $value * 1.3333 +0px;
+      }
+      @else if $convertUnit == ems{
+        @return $value / 12 + 0em;
+      }
+      @else if $convertUnit == percent{
+        @return percentage($value / 12)
+      }
+    }
+  }
